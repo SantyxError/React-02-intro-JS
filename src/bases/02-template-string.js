@@ -1,5 +1,3 @@
-console.log("Hello world!");
-
 //Template String
 
 const nombre = 'Santiago'
