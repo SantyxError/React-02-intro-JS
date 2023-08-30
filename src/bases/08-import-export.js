@@ -4,20 +4,19 @@
 
 import heroes, { owners } from "../data/heroes";
 
-const getHeroesById = (id) => {
-  const heroe = heroes.find(heroe => heroe.id == id)
+export const getHeroesById = (id) => {
+  const heroe = heroes.find(heroe => heroe.id === id)
   return heroe
 }
 
 
-const getHeroesByOwner = (owner) => {
+export const getHeroesByOwner = (owner) => {
   const heroe = heroes.filter(heroe => heroe.owner === owner)
   return heroe.map(heroe => heroe.name)
 }
 
-console.log(getHeroesById(2));
-console.log(getHeroesByOwner('DC'));
-
+/* console.log(getHeroesById(2));
+console.log(getHeroesByOwner('DC')); */
 
 
 
